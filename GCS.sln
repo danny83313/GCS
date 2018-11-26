@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCS", "GCS.csproj", "{666C6452-96BD-4DBC-A3FE-6288ECCFDD12}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{5046F811-BE5A-4479-9B75-57B89FBB63FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAVLink", "Library\Mavlink\MAVLink.csproj", "{D5CDEF54-BDB0-4F8C-92AF-45EFA391EF4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{666C6452-96BD-4DBC-A3FE-6288ECCFDD12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{666C6452-96BD-4DBC-A3FE-6288ECCFDD12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{666C6452-96BD-4DBC-A3FE-6288ECCFDD12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5CDEF54-BDB0-4F8C-92AF-45EFA391EF4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5CDEF54-BDB0-4F8C-92AF-45EFA391EF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5CDEF54-BDB0-4F8C-92AF-45EFA391EF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5CDEF54-BDB0-4F8C-92AF-45EFA391EF4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D5CDEF54-BDB0-4F8C-92AF-45EFA391EF4D} = {5046F811-BE5A-4479-9B75-57B89FBB63FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1E213195-7C1E-4548-8F1D-E8D2425DF0B6}
