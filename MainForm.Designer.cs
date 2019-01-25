@@ -34,6 +34,7 @@
             this.button_connect = new System.Windows.Forms.Button();
             this.button_armdisarm = new System.Windows.Forms.Button();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.Setmode_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CMB_comport
@@ -81,11 +82,22 @@
             this.button_armdisarm.UseVisualStyleBackColor = true;
             this.button_armdisarm.Click += new System.EventHandler(this.button_armdisarm_Click);
             // 
+            // Setmode_button
+            // 
+            this.Setmode_button.Location = new System.Drawing.Point(440, 245);
+            this.Setmode_button.Name = "Setmode_button";
+            this.Setmode_button.Size = new System.Drawing.Size(75, 23);
+            this.Setmode_button.TabIndex = 4;
+            this.Setmode_button.Text = "Setmode";
+            this.Setmode_button.UseVisualStyleBackColor = true;
+            this.Setmode_button.Click += new System.EventHandler(this.Setmode_button_Click_1);
+            // 
             // GCS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(687, 344);
+            this.Controls.Add(this.Setmode_button);
             this.Controls.Add(this.button_armdisarm);
             this.Controls.Add(this.button_connect);
             this.Controls.Add(this.CMB_baudrate);
@@ -103,6 +115,7 @@
         private System.Windows.Forms.Button button_connect;
         private System.Windows.Forms.Button button_armdisarm;
         private System.IO.Ports.SerialPort serialPort1;
+        private System.Windows.Forms.Button Setmode_button;
     }
 }
 

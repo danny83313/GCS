@@ -33,7 +33,17 @@ namespace GCS.Properties
         internal Resources()
         {
         }
-
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap quadicon
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("quadicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         /// <summary>
         ///   傳回這個類別使用的快取的 ResourceManager 執行個體。
         /// </summary>
