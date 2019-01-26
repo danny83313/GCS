@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using GCS.PathProgramming;
 
 namespace GCS
 {
@@ -14,6 +7,7 @@ namespace GCS
     {
         public PathTest()
         {
+            Tasks_Assignment a = new Tasks_Assignment();
             InitializeComponent();
         }
     }
