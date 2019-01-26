@@ -1083,5 +1083,22 @@ namespace GCS
             comPort.setMode("GUIDED");
             Console.WriteLine("Set mode to GUIDED");
         }
+
+        private void disconnect_Click(object sender, EventArgs e)
+        {
+            log.Info("We are disconnecting");
+            try
+            {
+             
+
+                comPort.BaseStream.DtrEnable = false;
+                comPort.Close();
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex);
+            }
+          
+        }
     }
 }
