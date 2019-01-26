@@ -17,6 +17,7 @@ namespace GCS
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new GCS());
+            ////1
         }
     }
 }
