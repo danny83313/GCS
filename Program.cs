@@ -10,8 +10,6 @@ namespace GCS
     static class Program
     {
         internal static Thread Thread;
-       // public static bool WindowsStoreApp { get { return Application.ExecutablePath.Contains("WindowsApps"); } }
-        //public static string[] args = new string[] { };
         /// <summary>
         /// 應用程式的主要進入點。
         /// </summary>
@@ -22,7 +20,7 @@ namespace GCS
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
+            /*執行程式前先定義Heartbeat封包*/
             MAVLink.MavlinkParse tmp = new MAVLink.MavlinkParse();
             MAVLink.mavlink_heartbeat_t hb = new MAVLink.mavlink_heartbeat_t()
             {

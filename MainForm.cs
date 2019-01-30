@@ -65,7 +65,7 @@ namespace GCS
         public GCS()
         {
             InitializeComponent();
-            Comports.Add(comPort);
+            Comports.Add(comPort); //在MAVList裡面加入一個欄位提供下一個連線放值
         }
         protected override void OnLoad(EventArgs e)
         {
