@@ -384,7 +384,7 @@ union px4_custom_mode {
         {
             PointLatLng portlocation = new PointLatLng(MAV.cs.lat, MAV.cs.lng);
 
-           /* if (MAV.aptype == MAVLink.MAV_TYPE.FIXED_WING)
+           /*if (MAV.aptype == MAVLink.MAV_TYPE.FIXED_WING)
             {
                 return (new GMapMarkerPlane(portlocation, MAV.cs.yaw,
                     MAV.cs.groundcourse, MAV.cs.nav_bearing, MAV.cs.target_bearing, MAV.cs.radius)

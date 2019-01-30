@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-
 namespace GCS.Utilities
 {
     public static class L10NU

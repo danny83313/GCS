@@ -65,6 +65,7 @@ namespace GCS
         public GCS()
         {
             InitializeComponent();
+            Comports.Add(comPort);
         }
         protected override void OnLoad(EventArgs e)
         {
@@ -551,8 +552,9 @@ namespace GCS
                         var att = (MAVLink.mavlink_attitude_t)packet.data;
                         Console.WriteLine(att.pitch * 57.2958 + " " + att.roll * 57.2958);
                         Console.WriteLine(comPort.MAV.cs.pitch * 57.2958 + " " + comPort.MAV.cs.roll * 57.2958);
-                        //Console.WriteLine(comPort.MAV.cs.mode);
+                        Console.WriteLine(comPort.MAV.cs.mode);
                     }
+                   
                 }
                 catch
                 {
